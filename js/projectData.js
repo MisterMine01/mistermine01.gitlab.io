@@ -279,12 +279,12 @@ let themeData = {
             <h3>Cahier des charges</h3>
             <p>{CahierCharges}</p>
         </div>
-    </section>
-    <article>
-        <section>
+        <div>
             <h3>Compétences</h3>
             <p>{competences}</p>
-        </section>
+        </div>
+    </section>
+    <article>
         <section>
             <h3>Méthodes</h3>
             <p>{methodes}</p>
