@@ -45,20 +45,45 @@ var ProjectsSystem = new class {
         }
     }
 
+    acceuil() {
+        var project = new Project("", "", [], "acceuil", {}, this.projectsContainer, document.getElementById("projectTemplate"));
+        project.hide();
+        project.load_theme()
+    }
+
     async toPdf() {
-        if (this.project_selected == undefined) {
-            return;
-        }
-        var canvas = await html2canvas(document.getElementById("projectTemplate").children[0], {
-            scale: 1.5,
-        });
-        console.log(canvas);
-        var img = canvas.toDataURL("image/png", 1.0);
+        document.body.children[0].style.display = "none";
+        document.body.children[1].children[0].style.display = "none";
 
-        var doc = new jspdf.jsPDF('l', 'px', [canvas.width*5, canvas.height*5]);
+        document.getElementById("projectName").innerHTML = "BOUGET Alexandre - " + ProjectsSystem.project_selected.name;
 
-        doc.addImage(img, 'PNG', 0, 0, canvas.width*5, canvas.height*5);
-        doc.save('test.pdf');
+        document.getElementById("projectTemplate").parentElement.style.maxHeight = "none";
+        document.getElementById("projectTemplate").parentElement.parentElement.style.height = "auto";
+        document.body.style.backgroundColor = "white";
+
+        setTimeout(async function () {
+            if (ProjectsSystem.project_selected == undefined) {
+                return;
+            }
+            var canvas = await html2canvas(document.body, {
+                scale: 1.5,
+            });
+            var img = canvas.toDataURL("image/png");
+
+            var doc = new jspdf.jsPDF('l', 'px', [canvas.width, canvas.height]);
+
+            doc.addImage(img, 'PNG', 0, 0, canvas.width, canvas.height);
+            doc.save("abouget-"+ProjectsSystem.project_selected.name+".pdf");
+            
+            document.body.children[0].style.display = "flex";
+            document.body.children[1].children[0].style.display = "flex";
+
+            document.getElementById("projectName").innerHTML = ProjectsSystem.project_selected.name;
+
+            document.getElementById("projectTemplate").parentElement.style.maxHeight = null;
+            document.getElementById("projectTemplate").parentElement.parentElement.style.height = null;
+            document.body.style.backgroundColor = null;
+        }, 50);
     }
 
     showAll() {

@@ -36,6 +36,41 @@ let ProjectData = [
         }
     },
     {
+        "name": "Création de base de données",
+        "description": "SAE 1.04, 2021",
+        "tags": ["2021", "SQL", "SAE", "IUT"],
+        "theme": "simple",
+        "theme_data": {
+            "CahierCharges": `
+            - Créer une base de données sur les demandes de l’entreprise fictive.
+            <br>
+            -Créer un modèles relationnelle pour la base de données.
+            <br>
+	        -Remplir la base de données.
+            <br>
+            - Créer des requêtes préconstruite pour une futures applications.
+            <br>
+            -Maquetter une application.
+            `,
+
+            "competences": `
+            - Créer une base de données.
+            <br>
+            - Appréhension du langages SQL dans une utilisation réelles
+            <br>
+            - Maquetter une application.
+            `,
+
+            "methodes": `
+            Nous avons commencé par étudier les besoin de l’entreprise puis créer
+            le modèles relationnelle de la base de données par rapport aux demandes.
+            Puis, pendant que je développer un script pour remplir la base, mon groupe
+            faisait les requêtes sql et le fichier que mon script utilisés pour remplir
+            la base. Enfin nous avons maquetter l’application.
+            `,
+        }
+    },
+    {
         "name": "Installation de poste",
         "description": "SAE 1.03, installation de linux et d'un espace de travail rust",
         "tags": ["2022", "BATCH", "SAE", "IUT"],
@@ -137,36 +172,43 @@ let ProjectData = [
         "name": "FDS",
         "description": "Systeme de mise à jour<br>(File Download System)",
         "tags": ["2020", "2021", "Python", "PHP", "Personnelle"],
-        "theme": "theme1",
+        "theme": "dini",
+        "theme_data": {}
     },
     {
         "name": "Relic Engine",
         "description": "Moteur de jeu 2D, avec ajout de script",
         "tags": ["2019", "2021", "Python", "Personnelle"],
-        "theme": "theme1",
+        "theme": "dini",
+        "theme_data": {}
     },
     {
         "name": "Tchat",
         "description": "Tchat en ligne fonctionnant avec ajax",
         "tags": ["2019", "Python", "PHP", "Personnelle"],
+        "theme": "dini",
+        "theme_data": {}
     },
     {
         "name": "Utopia",
         "description": "Jeu de carte multijoueur",
         "tags": ["2019", "2020", "2021", "2022", "Python", "WEB", "PHP", "Personnelle"],
-        "theme": "theme1",
+        "theme": "dini",
+        "theme_data": {}
     },
     {
         "name": "Launcher",
         "description": "Création d'un lanceur d'application avec connexion",
         "tags": ["2018", "BATCH", "Personnelle"],
-        "theme": "theme1",
+        "theme": "dini",
+        "theme_data": {}
     },
     {
         "name": "Aie",
         "description": "Test du SpeechSynthesis avec questions/réponses",
         "tags": ["2017", "BATCH", "Personnelle"],
-        "theme": "theme1",
+        "theme": "dini",
+        "theme_data": {}
     },
 ]
 
@@ -230,7 +272,25 @@ let themeData = {
             <p>{methodes}</p>
         </section>
     </article>
-`,
+    `,
+    "simple": `
+    <section>
+        <div>
+            <h3>Cahier des charges</h3>
+            <p>{CahierCharges}</p>
+        </div>
+    </section>
+    <article>
+        <section>
+            <h3>Compétences</h3>
+            <p>{competences}</p>
+        </section>
+        <section>
+            <h3>Méthodes</h3>
+            <p>{methodes}</p>
+        </section>
+    </article>
+    `,
 
     "dini": `
         <h2>Attention: Chantier en cours</h2>
@@ -239,5 +299,13 @@ let themeData = {
             il est donc possible que certaines choses ne
             soient pas encore fonctionnelles.</p>
         <img src="./img/Dini.png">
-    `
+    `,
+    "acceuil": `
+        <h2>Alexandre Bouget</h2>
+        <p>
+        Actuellement étudiant au département informatique de l'IUT de bordeaux
+        <br>
+        je suis passionné par le développement back-end d'applications.
+        </p>
+    `,
 }

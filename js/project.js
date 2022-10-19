@@ -37,6 +37,7 @@ class Project {
     load_theme() {
         Loader.load(this.theme, this.theme_data, this.theme_container);
         ProjectsSystem.project_selected = this;
+        document.getElementById("projectName").innerHTML = this.name;
     }
     filter(allTags, research) {
         for (var i = 0; i < allTags.length; i++) {
