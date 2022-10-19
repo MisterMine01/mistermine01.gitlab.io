@@ -7,12 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alexandre BOUGET - Portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/aside.css">
     <link rel="stylesheet" href="./css/section.css">
 
+
     <link rel="stylesheet" href="./css/theme/oneImage.css">
+    <link rel="stylesheet" href="./css/theme/twoImage.css">
+    <link rel="stylesheet" href="./css/theme/threeImage.css">
 </head>
 
 <body>
@@ -40,6 +46,7 @@
                 <div id="projectTemplate">
                 </div>
             </section>
+            <button onclick="ProjectsSystem.toPdf()">Télécharger</button>
         </article>
     </div>
 

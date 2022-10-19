@@ -7,6 +7,7 @@ var ProjectsSystem = new class {
         this.showAll();
         this.createEvent();
         this.tagFilter = [];
+        this.project_selected = undefined;
     }
 
     constructDepliant() {
@@ -29,7 +30,7 @@ var ProjectsSystem = new class {
                         pack.innerHTML = tagPack;
                         this.depliant.appendChild(pack);
                     }
-                    i=1;
+                    i = 1;
                 }
                 var tagData = document.createElement("input");
                 tagData.type = "button";
@@ -42,6 +43,22 @@ var ProjectsSystem = new class {
                 this.depliant.appendChild(tagData);
             }
         }
+    }
+
+    async toPdf() {
+        if (this.project_selected == undefined) {
+            return;
+        }
+        var canvas = await html2canvas(document.getElementById("projectTemplate").children[0], {
+            scale: 1.5,
+        });
+        console.log(canvas);
+        var img = canvas.toDataURL("image/png", 1.0);
+
+        var doc = new jspdf.jsPDF('l', 'px', [canvas.width*5, canvas.height*5]);
+
+        doc.addImage(img, 'PNG', 0, 0, canvas.width*5, canvas.height*5);
+        doc.save('test.pdf');
     }
 
     showAll() {

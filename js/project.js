@@ -36,6 +36,7 @@ class Project {
     }
     load_theme() {
         Loader.load(this.theme, this.theme_data, this.theme_container);
+        ProjectsSystem.project_selected = this;
     }
     filter(allTags, research) {
         for (var i = 0; i < allTags.length; i++) {
