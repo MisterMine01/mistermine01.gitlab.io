@@ -14,7 +14,8 @@ let tagsData = {
         "SQL",
         "Java",
         "PHP",
-        "BATCH"
+        "BATCH",
+        "Bash",
     ],
     "Type": [
         "IUT",
@@ -33,6 +34,70 @@ let ProjectData = [
         "theme_data": {
             "name": "ClimatView",
             "description": "SAE 2.4 et 2.5, 2022",
+        }
+    },
+    {
+        "name": "Environnement Economique",
+        "description": "SAE 1.6, 2021",
+        "tags": ["2021", "SAE", "IUT"],
+        "theme": "twoimage",
+        "theme_data": {
+            "img1": "img/root/EnvEco1.png",
+            "img2": "img/root/EnvEco2.png",
+            "img1alt": "Environnement Economique",
+            "img2alt": "Environnement Economique",
+
+            "CahierCharges": `
+            - Créer une entreprise
+            <br>
+            - Trouver son activité 
+            <br>
+            - Trouver nos concurrents
+            <br>
+            - Analyse de l’entreprise avec le modèle PESTEL et SWOT.
+            <br>
+            - Construire une stratégie.
+            `,
+
+            "competences": `
+            ...
+            `,
+
+            "methodes": `
+            Nous avons commencez par chercher une activité (reventes de jeux vidéo dématérialisé),
+            un nom, un slogan et un logo. Une fois cela fait nous avons chercher nos concurrents
+            afin de construire une stratégie. Enfin, nous avons analyser notre entreprise et
+            activité pour les modèle PESTEL et SWOT.
+            `,
+        }
+    },
+    {
+        "name": "Créer une page web",
+        "description": "SAE 1.5, 2021",
+        "tags": ["2021", "WEB", "SAE", "IUT"],
+        "theme": "oneimage",
+        "theme_data": {
+            "img1": "img/root/web1.png",
+            "img1alt": "Page web",
+            "CahierCharges": `
+            - Créer un site web pour l’entreprise créer en Environnement économiques
+            <br>
+            - Créer des personnas qui serait intéressé par notre site web
+            <br>
+            - Rendre notre site web responsive (adapté à tout les écrans)
+            `,
+
+            "competences": `
+            - Travailler en équipes
+            <br>
+            - css
+            `,
+
+            "methodes": `
+            Nous avons débuté par faire les personnas.
+            Puis nous avons fait la maquette de la page principale.
+            Et enfin nous nous sommes partagés les pages pour pouvoir les faire.
+            `
         }
     },
     {
@@ -73,7 +138,7 @@ let ProjectData = [
     {
         "name": "Installation de poste",
         "description": "SAE 1.03, installation de linux et d'un espace de travail rust",
-        "tags": ["2022", "BATCH", "SAE", "IUT"],
+        "tags": ["2022", "Bash", "SAE", "IUT"],
         "theme": "threeimage",
         "theme_data": {
             "img1": "img/root/Poste1.png",
@@ -110,9 +175,9 @@ let ProjectData = [
         "theme": "oneimage",
         "theme_data": {
             "img1": "img/root/Lowatem1.png",
-            
+
             "img1Alt": "Lowatem graphique",
-            
+
             "CahierCharges": `- Créer les règles d'un jeu suivant
                 les instructions demandés (une fois une règles implémenter et fonctionnelle, on passe au suivant)
                 <br>
@@ -232,6 +297,7 @@ let themeData = {
             </section>
         </article>
     `,
+
     "twoimage": `
         <section>
             <img src="{img1}" alt="{img1Alt}">
@@ -252,44 +318,46 @@ let themeData = {
             </section>
         </article>
     `,
+
     "threeimage": `
-    <section>
-        <img src="{img1}" alt="{img1Alt}">
-        <div>
-            <h3>Cahier des charges</h3>
-            <p>{CahierCharges}</p>
-        </div>
-        <img src="{img2}" alt="{img2Alt}">
-    </section>
-    <article>
         <section>
-            <h3>Compétences</h3>
-            <p>{competences}</p>
+            <img src="{img1}" alt="{img1Alt}">
+            <div>
+                <h3>Cahier des charges</h3>
+                <p>{CahierCharges}</p>
+            </div>
+            <img src="{img2}" alt="{img2Alt}">
         </section>
-        <img src="{img3}" alt="{img3Alt}">
-        <section>
-            <h3>Méthodes</h3>
-            <p>{methodes}</p>
-        </section>
-    </article>
+        <article>
+            <section>
+                <h3>Compétences</h3>
+                <p>{competences}</p>
+            </section>
+            <img src="{img3}" alt="{img3Alt}">
+            <section>
+                <h3>Méthodes</h3>
+                <p>{methodes}</p>
+            </section>
+        </article>
     `,
+
     "simple": `
-    <section>
-        <div>
-            <h3>Cahier des charges</h3>
-            <p>{CahierCharges}</p>
-        </div>
-        <div>
-            <h3>Compétences</h3>
-            <p>{competences}</p>
-        </div>
-    </section>
-    <article>
         <section>
-            <h3>Méthodes</h3>
-            <p>{methodes}</p>
+            <div>
+                <h3>Cahier des charges</h3>
+                <p>{CahierCharges}</p>
+            </div>
+            <div>
+                <h3>Compétences</h3>
+                <p>{competences}</p>
+            </div>
         </section>
-    </article>
+        <article>
+            <section>
+                <h3>Méthodes</h3>
+                <p>{methodes}</p>
+            </section>
+        </article>
     `,
 
     "dini": `
@@ -300,6 +368,7 @@ let themeData = {
             soient pas encore fonctionnelles.</p>
         <img src="./img/Dini.png">
     `,
+
     "acceuil": `
         <h2>Alexandre Bouget</h2>
         <p>
