@@ -1,17 +1,16 @@
 aside input[type="text"] {
     background-color: gray;
     padding: 10px;
-    border: 3px solid gray ;
+    border: 3px solid gray;
     border-radius: 5px;
     width: 85%;
 }
-
 aside input:hover {
     border-color: red;
 }
-
 aside {
-    background-color: rgba(0, 0, 0, 0.5);
+    background: rgb(135, 134, 237, 0.2);
+    background: linear-gradient(90deg, rgba(135, 134, 237, 0.2) 0%, rgba(52, 162, 119, 0.4) 89%);
     flex: 2 0 0;
     display: flex;
     flex-direction: column;
@@ -22,8 +21,7 @@ aside {
     max-height: 80vh;
     height: 80vh;
 }
-
-aside > #depliant {
+aside>#depliant {
     background-color: rgba(255, 255, 255, 0.5);
     margin-left: auto;
     width: 20%;
@@ -34,8 +32,7 @@ aside > #depliant {
     border-radius: 10px;
     margin-top: 40px;
 }
-
-aside > #allProject{
+aside>#allProject {
     width: 100%;
     max-height: calc(100vh - 15%);
     display: flex;
@@ -44,21 +41,40 @@ aside > #allProject{
     margin-top: 10px;
     overflow-y: scroll;
 }
-
-aside > #allProject > div {
-    background-color: rgba(255, 255, 255, 0.1);
+aside>#allProject>div {
+    background: rgb(124, 123, 210);
+    background: linear-gradient(90deg, rgba(124, 123, 210, 1) 0%, rgba(124, 123, 210, 1) 40%, rgba(203, 104, 226, 1) 50%, rgba(124, 123, 210, 1) 60%, rgba(124, 123, 210, 1) 100%);
+    background-size: 200% 200%;
+    border-radius: 12px;
     width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 5%;
+    margin-top: 5%;
+    animation: gradient 3s ease infinite;
+    animation-play-state: paused;
 }
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
 
-aside > #allProject p {
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+aside>#allProject>div:hover {
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+    animation-play-state: running;
+}
+aside>#allProject p {
     text-align: center;
 }
-
-aside > #allProject > div:hover {
+aside>#allProject>div:hover {
     background-color: rgba(255, 255, 255, 0.5);
 }

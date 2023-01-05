@@ -1,5 +1,6 @@
 body {
-    background-color: burlywood;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(157,40,184,1) 0%, rgba(52,162,119,1) 65%, rgba(2,0,36,1) 95%);
     display: flex;
     margin: 0;
     border: 0;
