@@ -32,6 +32,8 @@ body > div {
 
     body > div {
         margin-top: 25%;
+        flex-direction: column;
+        width: 100% ;
     }
 
     body > div > section > div {
