@@ -30,7 +30,7 @@ let ProjectData = [
         "name": "ClimatView",
         "description": "SAE 2.4 et 2.5, 2022",
         "tags": ["2022", "Python", "SAE", "IUT"],
-        "theme": "oneimage",
+        "theme": "dini",
         "theme_data": {
             "name": "ClimatView",
             "description": "SAE 2.4 et 2.5, 2022",
@@ -237,29 +237,116 @@ let ProjectData = [
         "name": "FDS",
         "description": "Systeme de mise à jour<br>(File Download System)",
         "tags": ["2020", "2021", "Python", "PHP", "Personnelle"],
-        "theme": "dini",
-        "theme_data": {}
+        "theme": "simple",
+        "theme_data": {
+            "CahierCharges": `
+            - Créer un système de mise à jour pour un jeu<br>
+            - Connexion a un serveur et recuperation des informations<br>
+            - Telechargement des fichiers<br>
+            - Installation des fichiers<br>
+            `,
+            "competences": `
+            - zipper et dezipper des fichiers dans un code<br>
+            `,
+            "methodes": `Pour débuter, j'ai réfléchis à qu'est ce que je pourrai réutiliser dans mes anciens projets.
+            Très vite je me suis rendu compte que je pouvais réutiliser PCJSAPI, j'ai donc commencé par l'améliorer pour le client
+            ai le moins de travail possible. Ensuite, j'ai créer un serveur qui permet de gérer les fichiers (un zip par dossier) et les versions (json).
+            Enfin, j'ai créer un client qui permet de télécharger les fichiers et de les installer.`
+        }
     },
     {
         "name": "Relic Engine",
         "description": "Moteur de jeu 2D, avec ajout de script",
         "tags": ["2019", "2021", "Python", "Personnelle"],
-        "theme": "dini",
-        "theme_data": {}
+        "theme": "simple",
+        "theme_data": {
+            "CahierCharges": `
+            - Créer un moteur de jeu 2D avec tkinter<br>
+            - Créer un personnage capable de bouger<br>
+            - Changer de map<br>
+            `,
+            "competences": `
+            - canvas en tkinter<br>
+            - Fonctionnement de collisions<br>
+            - Lanceurs de script<br>
+            - Essayer de faire un code propre<br>
+            - Essayer de faire le moins de lag possible<br>
+            `,
+            "methodes": `Pour débuter, j'ai chercher comment injecter du code dans un programme python.
+            J'ai donc trouvé exec() qui permet de faire cela. Ensuite, j'ai débuter par
+            faire une base simple et facilement modifiable avec des scripts.
+            J'ai ensuite ajouté des script permettant de faire des collisions, des map, des animations, des déplacements, etc.
+            `
+
+        }
     },
     {
         "name": "Tchat",
         "description": "Tchat en ligne fonctionnant avec ajax",
         "tags": ["2019", "Python", "PHP", "Personnelle"],
-        "theme": "dini",
-        "theme_data": {}
+        "theme": "simple",
+        "theme_data": {
+            "CahierCharges": `
+            - Créer un tchat en ligne<br>
+            - Créer un serveur<br>
+            - Créer un client capable de se connecter au server<br>
+            - Créer un client capable d'envoyer et de recevoir des messages<br>
+            `,
+            "competences": `
+            - Comment fonctionne ajax<br>
+            - Requêtes HTTP<br>
+            - PHP<br>
+            `,
+            "methodes": `Pour débuter, j'ai commencer à chercher comment faire un serveur. 
+            Ayant aucun base dans le domaine, j'ai donc regarder le langage le plus connu dans le domaine, PHP.
+            J'ai donc commencé par créer un moyen de faciliter la création d'api, qui sera plus tard la 1ère base de PCJSAPI.
+            Une fois cela fait je me suis attaquer à un moyen de générer ,d'après une requete du serveur qui me retourne toutes ces fonctions,
+            un fichier qui serat injecter au client et qui permettra de lancer les commandes.
+            Une fois cela fait, il ne restait qu'à faire une interface graphique avec tkinter.
+            `,
+        }
     },
     {
         "name": "Utopia",
         "description": "Jeu de carte multijoueur",
         "tags": ["2019", "2020", "2021", "2022", "Python", "WEB", "PHP", "Personnelle"],
-        "theme": "dini",
-        "theme_data": {}
+        "theme": "simple",
+        "theme_data": {
+            "CahierCharges": `
+            - Créer un jeu de carte fonctionnelle<br>
+            - Les cartes ont une attaques et une défense<br>
+            - La défense ne regenere pas<br>
+            - Les cartes ont un coups à l'utilisation<br>
+            - Les cartes ont des effets<br>
+            - On peut créer des decks<br>
+            `,
+            "competences": `
+            - Python<br>
+            - L'orienté objet<br>
+            - Json<br>
+            - Tkinter<br>
+            - Threading<br>
+            - L'importance de la documentation<br>
+            - L'importance de la lisibilité du code<br>
+            - Socket<br>
+            - Comment fonctionne le réseau<br>
+            - Javascript<br>
+            `,
+            "methodes": `Pour débuter, j'ai réfléchis à des cartes avec lequel jouer (une dizaine environ).
+            Ensuite, j'ai appris à utiliser tkinter pour faire une interface graphique et une classe pour les cartes.
+            J'ai mis les cartes dans une sorte de base de données fait de 5 fichiers txt et utilisé le threading
+            et les sockets pour faire un serveur et un client (le serveur est aussi un client).
+            Pour continuer j'ai créer des deck, ajouter du son rajouter les effets, des cartes, bloqué l'accès à des cartes, qui doivent
+            êtres débloqués, etc. Une fois un support de mods ajouter, je me suis rendu compte que le code était devenu illisible et que je
+            n'avais pas documenté mon code. J'ai ainsi tout repris de zéro, en utilisant des parties de l'ancien code qui étaient bien faites.
+            J'ai donc créer une nouvelle base de données, une nouvelle interface graphique, avant de me rendre compte que le code était
+            redevenu illisible et que les socket rendaient le jeu trop complexe à lancer pour un utilisateur lambda. Pour cela, j'ai fait une
+            pause d'environ 10 mois. J'ai pendant ce temps appris à utiliser php (PCJSAPI), l'ajax et je me suis repris tous de zéros
+            en essayant de faire du orienté objet. Après une semaine de travail, le jeu était fonctionnel. Mais tkinter étant trop limité
+            et faisant énormément laguer le jeu, j'ai remis le jeu en pause et l'ai repris 5 mois après. J'ai alors décidé de garder
+            les serveur PHP et de faire un client en HTML/CSS/javascript. J'ai donc appris à utiliser javascript et à faire des requêtes ajax.
+            `
+        }
     },
     {
         "name": "Launcher",
