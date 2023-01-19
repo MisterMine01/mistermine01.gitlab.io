@@ -5,7 +5,8 @@ let tagsData = {
         "2019",
         "2020",
         "2021",
-        "2022"
+        "2022",
+        "2023"
     ],
     "Language": [
         "C#",
@@ -16,6 +17,7 @@ let tagsData = {
         "PHP",
         "BATCH",
         "Bash",
+        "C++",
     ],
     "Type": [
         "IUT",
@@ -27,13 +29,35 @@ let tagsData = {
 
 let ProjectData = [
     {
-        "name": "ClimatView",
-        "description": "SAE 2.4 et 2.5, 2022",
-        "tags": ["2022", "Python", "SAE", "IUT"],
-        "theme": "dini",
+        "name": "Kromblast",
+        "description": "Lancer des fonctions natif à partir d'un site web",
+        "tags": ["2022", "Python", "WEB", "C++", "Personnelle"],
+        "theme": "simple",
         "theme_data": {
-            "name": "ClimatView",
-            "description": "SAE 2.4 et 2.5, 2022",
+            "CahierCharges": `
+            - Utiliser un webview et lancer des fonctions natif à partir du javascript.
+            `,
+            "competences": `
+            - C++<br>
+            - Injections propres de code dans python<br>
+            - Injections dynamique de librairies dans c++
+            `,
+            "methodes": `
+            Kromblast est une application permettant de transformer un site web en application native
+            (ou plutôt de faire un pont entre le site web et les fonctions natifs du système).
+            Même s'il existe déjà des Frameworks qui permet de faire cela, comme Electron.js,
+            ce dernier est plutôt volumineux. Kromblast, lui, est installé une fois.
+            Ensuite un fichier de configuration permet à l'application de savoir ce qu'il
+            doit utiliser. Ce projet était fonctionnel mais non applicable à cause pywebview
+            qui a besoin de dépendance bien trop volumineuse pour pas grand-chose. Aujourd'hui,
+            l'application est développé en c++.Kromblast est une application permettant de transformer
+            un site web en application native (ou plutôt de faire un pont entre le site web et les fonctions 
+            natifs du système). Même s'il existe déjà des Frameworks qui permet de faire cela, comme Electron.js,
+            ce dernier est plutôt volumineux. Kromblast, lui, est installé une fois. Ensuite un fichier de configuration
+            permet à l'application de savoir ce qu'il doit utiliser. Ce projet était fonctionnel mais non
+            applicable à cause pywebview qui a besoin de dépendance bien trop volumineuse pour pas grand-chose.
+            Aujourd'hui, l'application est développé en c++.
+            `,
         }
     },
     {
@@ -48,25 +72,25 @@ let ProjectData = [
             "img2alt": "Environnement Economique",
 
             "CahierCharges": `
-            - Créer une entreprise
-            <br>
-            - Trouver son activité 
+                - Créer une entreprise
+                <br>
+            - Trouver son activité
             <br>
             - Trouver nos concurrents
+    <br>
+    - Analyse de l’entreprise avec le modèle PESTEL et SWOT.
             <br>
-            - Analyse de l’entreprise avec le modèle PESTEL et SWOT.
-            <br>
-            - Construire une stratégie.
+    - Construire une stratégie.
             `,
 
             "competences": `
             ...
-            `,
+    `,
 
             "methodes": `
-            Nous avons commencez par chercher une activité (reventes de jeux vidéo dématérialisé),
-            un nom, un slogan et un logo. Une fois cela fait nous avons chercher nos concurrents
-            afin de construire une stratégie. Enfin, nous avons analyser notre entreprise et
+            Nous avons commencez par chercher une activité(reventes de jeux vidéo dématérialisé),
+    un nom, un slogan et un logo.Une fois cela fait nous avons chercher nos concurrents
+            afin de construire une stratégie.Enfin, nous avons analyser notre entreprise et
             activité pour les modèle PESTEL et SWOT.
             `,
         }
@@ -80,18 +104,18 @@ let ProjectData = [
             "img1": "img/root/web1.png",
             "img1alt": "Page web",
             "CahierCharges": `
-            - Créer un site web pour l’entreprise créer en Environnement économiques
-            <br>
-            - Créer des personnas qui serait intéressé par notre site web
-            <br>
-            - Rendre notre site web responsive (adapté à tout les écrans)
-            `,
+    - Créer un site web pour l’entreprise créer en Environnement économiques
+    <br>
+    - Créer des personnas qui serait intéressé par notre site web
+    <br>
+    - Rendre notre site web responsive(adapté à tout les écrans)
+        `,
 
             "competences": `
-            - Travailler en équipes
-            <br>
-            - css
-            `,
+    - Travailler en équipes
+    <br>
+    - css
+        `,
 
             "methodes": `
             Nous avons débuté par faire les personnas.
@@ -107,31 +131,31 @@ let ProjectData = [
         "theme": "simple",
         "theme_data": {
             "CahierCharges": `
-            - Créer une base de données sur les demandes de l’entreprise fictive.
+    - Créer une base de données sur les demandes de l’entreprise fictive.
             <br>
-            -Créer un modèles relationnelle pour la base de données.
+    -Créer un modèles relationnelle pour la base de données.
             <br>
-	        -Remplir la base de données.
+    -Remplir la base de données.
             <br>
-            - Créer des requêtes préconstruite pour une futures applications.
+    - Créer des requêtes préconstruite pour une futures applications.
             <br>
-            -Maquetter une application.
+    -Maquetter une application.
             `,
 
             "competences": `
-            - Créer une base de données.
+    - Créer une base de données.
             <br>
-            - Appréhension du langages SQL dans une utilisation réelles
-            <br>
-            - Maquetter une application.
+    - Appréhension du langages SQL dans une utilisation réelles
+    <br>
+    - Maquetter une application.
             `,
 
             "methodes": `
             Nous avons commencé par étudier les besoin de l’entreprise puis créer
             le modèles relationnelle de la base de données par rapport aux demandes.
-            Puis, pendant que je développer un script pour remplir la base, mon groupe
+        Puis, pendant que je développer un script pour remplir la base, mon groupe
             faisait les requêtes sql et le fichier que mon script utilisés pour remplir
-            la base. Enfin nous avons maquetter l’application.
+            la base.Enfin nous avons maquetter l’application.
             `,
         }
     },
@@ -149,22 +173,22 @@ let ProjectData = [
             "img3Alt": "Poste3",
 
             "CahierCharges": `
-            - Installer un système d'exploitation sur une machine virtuelle (VM).
+    - Installer un système d'exploitation sur une machine virtuelle (VM).
+    <br>
+    -Créer des utilisateurs avec des droits différents.
             <br>
-            -Créer des utilisateurs avec des droits différents.
-            <br>
-            -Installer des applications et les configurer.
+    -Installer des applications et les configurer.
             `,
 
             "competences": `
-            - La création de compte sur Linux
-            <br>
-            - L'installation de package sur linux
-            `,
+    - La création de compte sur Linux
+    <br>
+    - L'installation de package sur linux
+        `,
 
-            "methodes": `Pour débuter, nous avons choisi une distribution Linux (ici Debian).
+            "methodes": `Pour débuter, nous avons choisi une distribution Linux(ici Debian).
             Nous l’avons ensuite installer sur la VM puis paramétrer les deux utilisateurs.
-            Enfin, nous avons installer les applications demandés (Git, Rust, VSCode).
+        Enfin, nous avons installer les applications demandés(Git, Rust, VSCode).
             `,
         }
     },
@@ -179,20 +203,20 @@ let ProjectData = [
             "img1Alt": "Lowatem graphique",
 
             "CahierCharges": `- Créer les règles d'un jeu suivant
-                les instructions demandés (une fois une règles implémenter et fonctionnelle, on passe au suivant)
-                <br>
-            - Créer une "intelligence artificielles" (doit juste pouvoir prendre le coups le plus intéressant)"
-            `,
+                les instructions demandés(une fois une règles implémenter et fonctionnelle, on passe au suivant)
+    <br>
+    - Créer une "intelligence artificielles"(doit juste pouvoir prendre le coups le plus intéressant)"
+        `,
 
-            "competences": `- Java<br>
-            - Avoir un code propre et maintenable sur le temps<br>
-            - Test unitaires<br>
-            - Travailler en équipes<br>
-            `,
+            "competences": `- Java <br>
+    - Avoir un code propre et maintenable sur le temps <br>
+    - Test unitaires <br>
+    - Travailler en équipes <br>
+    `,
 
             "methodes": `J'ai débuter par lire le code puis, pour chaque demande, j'ai commencé par ajouter le code besoin afin de changer le code préexistant pour que tous fonctionne.
             <br>
-            Pour l'IA, nous avons tous deux créer une intelligence puis avec un code développer au début de cette partie nous les avons fusionné.`
+    Pour l'IA, nous avons tous deux créer une intelligence puis avec un code développer au début de cette partie nous les avons fusionné.`
 
         }
     },
