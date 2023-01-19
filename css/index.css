@@ -1,6 +1,22 @@
+:root {
+    --main-color: #363B48;
+    --main-color-rgb: 54, 59, 72;
+    --secondary-color: #939597;
+    --secondary-color-rgb: 147, 149, 151;
+    --tertiary-color: #7C4C53;
+    --tertiary-color-rgb: 124, 76, 83;
+    --quaternary-color: #80856D;
+    --quaternary-color-rgb: 128, 133, 109;
+    --quinary-color: #CFC486;
+    --quinary-color-rgb: 207, 196, 134;
+}
+
 body {
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(157,40,184,1) 0%, rgba(52,162,119,1) 65%, rgba(2,0,36,1) 95%);
+    background: linear-gradient(
+        180deg,
+        var(--main-color) 0%,
+        var(--secondary-color) 100%
+    );
     display: flex;
     margin: 0;
     border: 0;
