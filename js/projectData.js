@@ -487,5 +487,6 @@ let themeData = {
         <br>
         je suis passionné par le développement back-end d'applications.
         </p>
+        <img src="./img/alex.jpeg">
     `,
 }
