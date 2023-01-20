@@ -1,13 +1,25 @@
 aside input[type="text"] {
-    background-color: gray;
+    background-color: var(--secondary-color);
     padding: 10px;
-    border: 3px solid gray;
+    border: 1px solid black;
     border-radius: 5px;
     width: 85%;
+    margin-top: 5px;
 }
 
 aside input:hover {
     border-color: var(--tertiary-color);
+}
+
+input[type="button"] {
+    background-color: var(--secondary-color);
+    border: 1px solid black;
+    border-radius: 5px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    margin: 2px;
+    width: 50%;
 }
 
 aside {
@@ -27,7 +39,7 @@ aside {
 }
 
 aside>#depliant {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.9);
     margin-left: auto;
     width: 20%;
     position: absolute;
@@ -85,15 +97,14 @@ aside>#allProject>div {
 aside>#allProject>div:hover {
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
     animation-play-state: running;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
 }
 
 aside>#allProject p {
     text-align: center;
 }
 
-aside>#allProject>div:hover {
-    background-color: rgba(255, 255, 255, 0.5);
-}
 
 
 

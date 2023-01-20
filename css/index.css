@@ -1,14 +1,14 @@
 :root {
-    --main-color: #BDEDE0;
+    --main-color: #cbddd8;
     --secondary-color: #BBDBD1;
-    --tertiary-color: #B6B8D6;
+    --tertiary-color: #8ab2b9;
     --quaternary-color: #7E78D2;
-    --quinary-color: #6F58C9;
-    --main-color-rgb: 189, 237, 224;
+    --quinary-color: #d9d0ff;
+    --main-color-rgb: 203, 221, 216;
     --secondary-color-rgb: 187, 219, 209;
-    --tertiary-color-rgb: 182, 184, 214;
+    --tertiary-color-rgb: 138, 178, 185;
     --quaternary-color-rgb: 126, 120, 210;
-    --quinary-color-rgb: 111, 88, 201;
+    --quinary-color-rgb: 217, 208, 255;
 }
 
 
@@ -25,7 +25,7 @@ body {
     width: 100vw;
     height: 100vh;
     flex-direction: column;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Saira', sans-serif;
 }
 
 
@@ -34,6 +34,20 @@ body > div {
     display: flex;
     flex: 15 0 auto;
     align-items: center;
+}
+
+button {
+    background-color: var(--secondary-color);
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--tertiary-color);
 }
 
 

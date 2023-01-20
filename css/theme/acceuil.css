@@ -3,3 +3,9 @@
     flex-direction: column;
     align-items: center;
 }
+
+.acceuil img {
+    width: 20%;
+    height: auto;
+    border-radius: 5%;
+}

@@ -34,7 +34,7 @@
     align-items: center;
     margin-bottom: 5%;
     border-radius: 10px;
-    height: max-content;
+    height: 100%;
 }
 
 .oneimage > article {
@@ -51,4 +51,5 @@
     align-items: center;
     margin: 1%;
     border-radius: 10px;
+    height: 100%;
 }

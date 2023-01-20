@@ -1,6 +1,6 @@
 body > header {
     margin: 2px;
-    background-color: rgba(var(--tertiary-color-rgb), 0.5);
+    background-color: rgba(var(--tertiary-color-rgb), 0.8);
     display: flex;
     justify-content: space-between;
     border: 3px solid black;
@@ -30,10 +30,11 @@ body > header > div > p {
     background-color: rgba(var(--tertiary-color-rgb), 0.5);
     margin: auto;
     padding: 10px;
-    border: 3px solid var(--tertiary-color);
+    
     border-radius: 5px;
 }
 
 body > header > div > p:hover {
-    border-color: var(--secondary-color);
+    border: 2px solid var(--tertiary-color);
+    cursor: pointer;
 }
