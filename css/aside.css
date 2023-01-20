@@ -51,11 +51,11 @@ aside>#allProject {
 aside>#allProject>div {
     background: var(--quaternary-color);
     background: linear-gradient(90deg,
-            var(--quaternary-color) 0%,
-            var(--quaternary-color) 40%,
+            var(--tertiary-color) 0%,
+            var(--tertiary-color) 40%,
             var(--quinary-color) 50%,
-            var(--quaternary-color) 60%,
-            var(--quaternary-color) 100%);
+            var(--tertiary-color) 60%,
+            var(--tertiary-color) 100%);
     background-size: 200% 200%;
     border-radius: 12px;
     width: 90%;
