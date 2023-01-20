@@ -489,4 +489,18 @@ let themeData = {
         </p>
         <img src="./img/alex.jpeg">
     `,
+    "contact": `
+        <h2>Contact</h2>
+        <p>
+            <a href="mailto:abouget68@gmail.com"  target="_blank">
+                <img src="./img/contact/mail.png" alt="mail">
+            </a>
+            <a href="https://www.linkedin.com/in/bouget-alexandre-12aa30251/" target="_blank">
+                <img src="./img/contact/linkedin.png" alt="linkedin">
+            </a>
+            <a href="https://github.com/MisterMine01/" target="_blank">
+                <img src="./img/contact/github.png" alt="github">
+            </a>
+        </p>
+    `,
 }

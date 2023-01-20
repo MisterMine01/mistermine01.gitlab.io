@@ -48,7 +48,13 @@ var ProjectsSystem = new class {
     acceuil() {
         var project = new Project("", "", [], "acceuil", {}, this.projectsContainer, document.getElementById("projectTemplate"));
         project.hide();
-        project.load_theme()
+        project.load_theme();
+    }
+
+    contact() {
+        var project = new Project("", "", [], "contact", {}, this.projectsContainer, document.getElementById("projectTemplate"));
+        project.hide();
+        project.load_theme();
     }
 
     async toPdf() {
