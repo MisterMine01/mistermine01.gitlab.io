@@ -44,18 +44,13 @@ body > div {
     body > header {
         display: flex;
         flex-direction: column;
-        position: absolute;
         width: 95%;
         margin: 2.5%;
     }
 
     body > div {
-        margin-top: 25%;
         flex-direction: column;
         width: 100%;
-    }
-
-    body > div > aside {
     }
 
     body > div > article {
