@@ -57,6 +57,15 @@ var ProjectsSystem = new class {
         project.load_theme();
     }
 
+    allProject() {
+        var child = document.body.children[1].children[0];
+        if (child.style.display == "none") {
+            child.style.display = "flex";
+        } else {
+            child.style.display = "none";
+        }
+    }
+
     async toPdf() {
         document.body.children[0].style.display = "none";
         document.body.children[1].children[0].style.display = "none";

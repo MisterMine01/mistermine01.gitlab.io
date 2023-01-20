@@ -45,17 +45,24 @@ body > div {
         display: flex;
         flex-direction: column;
         position: absolute;
-        width: 98%;
+        width: 95%;
+        margin: 2.5%;
     }
 
     body > div {
         margin-top: 25%;
         flex-direction: column;
-        width: 100% ;
+        width: 98%;
     }
-
-    body > div > section > div {
+    body > div > article {
         display: flex;
         flex-direction: column;
+        width: 98%;
+    }
+
+    body > div > article > div {
+        display: flex;
+        flex-direction: column;
+        max-width: 98%;
     }
 }
