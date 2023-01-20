@@ -69,6 +69,8 @@ var ProjectsSystem = new class {
     async toPdf() {
         document.body.children[0].style.display = "none";
         document.body.children[1].children[0].style.display = "none";
+        let margin = document.body.children[1].style.marginTop;
+        document.body.children[1].style.marginTop = "0px";
 
         document.getElementById("projectName").innerHTML = "BOUGET Alexandre - " + ProjectsSystem.project_selected.name;
 
@@ -85,11 +87,13 @@ var ProjectsSystem = new class {
             });
             var img = canvas.toDataURL("image/png");
 
-            var doc = new jspdf.jsPDF('l', 'px', [canvas.width, canvas.height]);
+            const type = (document.width > document.height) ? 'l' : 'p';
+
+            var doc = new jspdf.jsPDF(type, 'px', [canvas.width, canvas.height]);
 
             doc.addImage(img, 'PNG', 0, 0, canvas.width, canvas.height);
-            doc.save("abouget-"+ProjectsSystem.project_selected.name+".pdf");
-            
+            doc.save("abouget-" + ProjectsSystem.project_selected.name + ".pdf");
+
             document.body.children[0].style.display = "flex";
             document.body.children[1].children[0].style.display = "flex";
 
@@ -98,6 +102,7 @@ var ProjectsSystem = new class {
             document.getElementById("projectTemplate").parentElement.style.maxHeight = null;
             document.getElementById("projectTemplate").parentElement.parentElement.style.height = null;
             document.body.style.backgroundColor = null;
+            document.body.children[1].style.marginTop = margin;
         }, 50);
     }
 
