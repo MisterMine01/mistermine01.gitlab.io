@@ -52,8 +52,12 @@ body > div {
     body > div {
         margin-top: 25%;
         flex-direction: column;
-        width: 98%;
+        width: 100%;
     }
+
+    body > div > aside {
+    }
+
     body > div > article {
         display: flex;
         flex-direction: column;
