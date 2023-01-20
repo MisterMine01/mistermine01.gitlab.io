@@ -87,7 +87,7 @@ var ProjectsSystem = new class {
             });
             var img = canvas.toDataURL("image/png");
 
-            const type = (document.width > document.height) ? 'l' : 'p';
+            const type = (window.innerWidth > window.innerHeight) ? 'l' : 'p';
 
             var doc = new jspdf.jsPDF(type, 'px', [canvas.width, canvas.height]);
 
