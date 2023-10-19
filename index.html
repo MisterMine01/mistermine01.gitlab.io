@@ -1,73 +1,13 @@
 <!DOCTYPE html>
-<html>
-<html lang="fr">
-
-<head>
+<html lang="en">
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alexandre BOUGET - Portfolio</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-    
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Saira&display=swap" rel="stylesheet"> 
-
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/aside.css">
-    <link rel="stylesheet" href="./css/section.css">
-
-
-    <link rel="stylesheet" href="./css/theme/simple.css">
-    <link rel="stylesheet" href="./css/theme/oneImage.css">
-    <link rel="stylesheet" href="./css/theme/twoImage.css">
-    <link rel="stylesheet" href="./css/theme/threeImage.css">
-    <link rel="stylesheet" href="./css/theme/acceuil.css">
-    <link rel="stylesheet" href="./css/theme/contact.css">
-</head>
-
-<body>
-    <header>
-        <section>
-            <h2>Alexandre Bouget</h2>
-            <h1>Portfolio</h1>
-        </section>
-        <div>
-            <p onclick="ProjectsSystem.acceuil()">Accueil</p>
-            <p onclick="ProjectsSystem.allProject()">Projets</p>
-            <p onclick="ProjectsSystem.contact()">Me contactez</p>
-        </div>
-    </header>
-    <div>
-        <aside>
-            <input type="text" placeholder="Recherche" id="Research" name="Research" />
-            <div id="depliant">
-            </div>
-            <div id="allProject">
-            </div>
-        </aside>
-        <article>
-            <h1 id="projectName">Projets</h1>
-            <section class="project">
-                <div id="projectTemplate">
-                </div>
-            </section>
-            <button onclick="ProjectsSystem.toPdf()">Télécharger</button>
-        </article>
-    </div>
-
-    <script src="js/loader.js"></script>
-    <script src="js/project.js"></script>
-    <script src="js/projectData.js"></script>
-    <script src="js/projectsSystem.js"></script>
-    <script>
-        ProjectsSystem.acceuil();
-    </script>
-</body>
-
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
 </html>
